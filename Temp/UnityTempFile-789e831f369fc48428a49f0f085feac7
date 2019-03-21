@@ -1,6 +1,6 @@
 /target:library
 /nowarn:0169
-/out:"Temp/Unity.CollabProxy.Editor.dll"
+/out:"Temp/Unity.PackageManagerUI.Editor.dll"
 /debug:portable
 /optimize-
 /nostdlib+
@@ -65,6 +65,7 @@
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"/Applications/Unity/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll"
@@ -88,9 +89,12 @@
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll"
 /reference:"/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 /reference:"/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
+/reference:"/Applications/Unity/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
 /reference:"/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
-/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll"
+/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll"
+/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll"
+/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll"
 /reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll"
 /reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll"
 /reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll"
@@ -229,14 +233,10 @@
 /define:UNITY_2018_3_8
 /define:UNITY_2018_3
 /define:UNITY_2018
-/define:PLATFORM_ARCH_64
-/define:UNITY_64
 /define:UNITY_INCLUDE_TESTS
 /define:ENABLE_AUDIO
 /define:ENABLE_CACHING
 /define:ENABLE_CLOTH
-/define:ENABLE_DUCK_TYPING
-/define:ENABLE_MICROPHONE
 /define:ENABLE_MULTIPLE_DISPLAYS
 /define:ENABLE_PHYSICS
 /define:ENABLE_SPRITES
@@ -246,13 +246,11 @@
 /define:ENABLE_TEXTURE_STREAMING
 /define:ENABLE_DIRECTOR
 /define:ENABLE_UNET
-/define:ENABLE_LZMA
 /define:ENABLE_UNITYEVENTS
 /define:ENABLE_WEBCAM
 /define:ENABLE_WWW
 /define:ENABLE_CLOUD_SERVICES_COLLAB
 /define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
-/define:ENABLE_CLOUD_SERVICES_ADS
 /define:ENABLE_CLOUD_HUB
 /define:ENABLE_CLOUD_PROJECT_ID
 /define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
@@ -273,34 +271,25 @@
 /define:INCLUDE_DYNAMIC_GI
 /define:INCLUDE_GI
 /define:ENABLE_MONO_BDWGC
-/define:PLATFORM_SUPPORTS_MONO
 /define:RENDER_SOFTWARE_CURSOR
 /define:INCLUDE_PUBNUB
 /define:ENABLE_VIDEO
 /define:ENABLE_CUSTOM_RENDER_TEXTURE
 /define:ENABLE_LOCALIZATION
-/define:PLATFORM_STANDALONE_OSX
-/define:PLATFORM_STANDALONE
-/define:UNITY_STANDALONE_OSX
-/define:UNITY_STANDALONE
-/define:ENABLE_SUBSTANCE
-/define:ENABLE_GAMECENTER
-/define:ENABLE_RUNTIME_GI
-/define:ENABLE_MOVIES
-/define:ENABLE_NETWORK
+/define:PLATFORM_WEBGL
+/define:UNITY_WEBGL
+/define:UNITY_WEBGL_API
+/define:UNITY_DISABLE_WEB_VERIFICATION
+/define:UNITY_GFX_USE_PLATFORM_VSYNC
 /define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
 /define:ENABLE_UNITYWEBREQUEST
 /define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
 /define:ENABLE_CLOUD_SERVICES_ANALYTICS
 /define:ENABLE_CLOUD_SERVICES_PURCHASING
 /define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
-/define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
-/define:ENABLE_CLUSTER_SYNC
-/define:ENABLE_CLUSTERINPUT
 /define:ENABLE_VR
-/define:ENABLE_AR
 /define:ENABLE_SPATIALTRACKING
-/define:ENABLE_WEBSOCKET_HOST
 /define:ENABLE_MONO
 /define:NET_4_6
 /define:ENABLE_PROFILER
@@ -316,20 +305,55 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/AssemblyInfo.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Bootstrap.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/CollabAnalytics.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/CollabHistoryWindow.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/CollabToolbarButton.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/CollabToolbarWindow.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Presenters/CollabHistoryPresenter.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/BuildStatusButton.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/CollabHistoryDropDown.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/CollabHistoryDropDownItem.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/CollabHistoryItem.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/CollabHistoryItemFactory.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/CollabHistoryRevisionLine.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/HistoryProgressSpinner.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/ICollabHistoryItemFactory.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/PagedListView.cs"
-"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/Views/StatusView.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/AssemblyInfo.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/External/SemVersion.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/External/SemVersionExtension.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Common/ApplicationUtil.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Common/OperationSignal.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Common/Resources.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Common/ThreadedDelay.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Interfaces/IAddOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Interfaces/IBaseOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Interfaces/IListOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Interfaces/IOperationFactory.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Interfaces/IRemoveOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Interfaces/ISearchOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/OperationFactory.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/Package.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageAssetPostprocessor.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageCollection.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageError.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageFilter.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageGroupOrigins.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageInfo.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageInfoListExtensions.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageJsonHelper.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageListExtensions.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageOrigin.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageSearchFilter.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageState.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Packages/PackageTag.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Upm/UpmAddOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Upm/UpmBaseOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Upm/UpmListOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Upm/UpmOperationFactory.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Upm/UpmRemoveOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/Services/Upm/UpmSearchOperation.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/Common/Alert.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/Common/LoadingSpinner.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/Common/PopupField.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/Common/UIUtils.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/Common/VersionItem.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/Interfaces/IPackageManagerExtension.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageAddFromUrlField.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageDetails.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageFiltering.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageGroup.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageItem.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageList.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageManagerExtensions.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageManagerPrefs.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageManagerToolbar.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageManagerWindow.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageSearchToolbar.cs"
+"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.package-manager-ui@2.0.3/Editor/Sources/UI/PackageStatusBar.cs"

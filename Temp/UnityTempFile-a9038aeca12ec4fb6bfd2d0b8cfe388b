@@ -15,8 +15,6 @@
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.BaselibModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll"
-/reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
-/reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
@@ -65,6 +63,7 @@
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"/Applications/Unity/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll"
@@ -88,9 +87,12 @@
 /reference:"/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll"
 /reference:"/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 /reference:"/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
+/reference:"/Applications/Unity/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 /reference:"/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
 /reference:"/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
-/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll"
+/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll"
+/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll"
+/reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll"
 /reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll"
 /reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll"
 /reference:"/Users/neetshah/Documents/Github/Space Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll"
@@ -226,14 +228,10 @@
 /define:UNITY_2018_3_8
 /define:UNITY_2018_3
 /define:UNITY_2018
-/define:PLATFORM_ARCH_64
-/define:UNITY_64
 /define:UNITY_INCLUDE_TESTS
 /define:ENABLE_AUDIO
 /define:ENABLE_CACHING
 /define:ENABLE_CLOTH
-/define:ENABLE_DUCK_TYPING
-/define:ENABLE_MICROPHONE
 /define:ENABLE_MULTIPLE_DISPLAYS
 /define:ENABLE_PHYSICS
 /define:ENABLE_SPRITES
@@ -243,13 +241,11 @@
 /define:ENABLE_TEXTURE_STREAMING
 /define:ENABLE_DIRECTOR
 /define:ENABLE_UNET
-/define:ENABLE_LZMA
 /define:ENABLE_UNITYEVENTS
 /define:ENABLE_WEBCAM
 /define:ENABLE_WWW
 /define:ENABLE_CLOUD_SERVICES_COLLAB
 /define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
-/define:ENABLE_CLOUD_SERVICES_ADS
 /define:ENABLE_CLOUD_HUB
 /define:ENABLE_CLOUD_PROJECT_ID
 /define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
@@ -270,34 +266,25 @@
 /define:INCLUDE_DYNAMIC_GI
 /define:INCLUDE_GI
 /define:ENABLE_MONO_BDWGC
-/define:PLATFORM_SUPPORTS_MONO
 /define:RENDER_SOFTWARE_CURSOR
 /define:INCLUDE_PUBNUB
 /define:ENABLE_VIDEO
 /define:ENABLE_CUSTOM_RENDER_TEXTURE
 /define:ENABLE_LOCALIZATION
-/define:PLATFORM_STANDALONE_OSX
-/define:PLATFORM_STANDALONE
-/define:UNITY_STANDALONE_OSX
-/define:UNITY_STANDALONE
-/define:ENABLE_SUBSTANCE
-/define:ENABLE_GAMECENTER
-/define:ENABLE_RUNTIME_GI
-/define:ENABLE_MOVIES
-/define:ENABLE_NETWORK
+/define:PLATFORM_WEBGL
+/define:UNITY_WEBGL
+/define:UNITY_WEBGL_API
+/define:UNITY_DISABLE_WEB_VERIFICATION
+/define:UNITY_GFX_USE_PLATFORM_VSYNC
 /define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
 /define:ENABLE_UNITYWEBREQUEST
 /define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
 /define:ENABLE_CLOUD_SERVICES_ANALYTICS
 /define:ENABLE_CLOUD_SERVICES_PURCHASING
 /define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
-/define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
-/define:ENABLE_CLUSTER_SYNC
-/define:ENABLE_CLUSTERINPUT
 /define:ENABLE_VR
-/define:ENABLE_AR
 /define:ENABLE_SPATIALTRACKING
-/define:ENABLE_WEBSOCKET_HOST
 /define:ENABLE_MONO
 /define:NET_STANDARD_2_0
 /define:ENABLE_PROFILER
